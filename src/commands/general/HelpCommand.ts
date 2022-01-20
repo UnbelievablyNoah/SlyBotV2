@@ -105,7 +105,7 @@ export class HelpCommand extends BaseCommand {
                     .addField(i18n.__("commands.general.help.usageString"), `**\`${command.meta.usage!.replace(/{prefix}/g, this.client.config.mainPrefix)}\`**`, true)
                     .setFooter({
                         text: i18n.__mf("commands.general.help.commandUsageFooter", { devOnly: command.meta.devOnly ? "(developer-only command)" : "" }),
-                        iconURL: "https://raw.githubusercontent.com/zhycorp/disc-11/main/.github/images/info.png"
+                        iconURL: "https://github.com/n343NC001/disc-11/blob/main/.github/images/info.png"
                     })
             ]
         }, "editReply");
