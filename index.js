@@ -3,6 +3,17 @@ const { existsSync, rmSync } = require("fs");
 const { resolve } = require("path");
 const { Server } = require("https");
 
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.sendStatus(200);
+});
+
+const listener = app.listen(process.env.PORT || 3000, () => {
+    console.log('Your app is currently listening on port: ' + listener.address().port);
+});
+
 try {
     require("dotenv/config");
 } catch (err) {
