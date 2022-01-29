@@ -19,7 +19,10 @@ module.exports = {
     "plugins": [
         "react",
         "@typescript-eslint"
-    ],
+    ],  
+    // eslint-disable-next-line no-dupe-keys
+    "extends": "eslint:recommended",
+
     "rules": {
     }
 }
