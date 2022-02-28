@@ -10,6 +10,8 @@
   "scripts": {
     "build": "npm run lint && npm run compile",
     "pm2:start": "pm2 start .",
+    "pm2:link:": "pm2 link 203pqowldnfgexy 22umryi1se1qws9",
+    "pm2:monit": "pm2 monit",
     "pm2:restart": "pm2 restart all",
     "compile": "npx sucrase src -d dist --transforms typescript,imports",
     "tscompile": "tsc --build tsconfig.json",
