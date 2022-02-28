@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run lint && npm run compile",
-    "pm2:start": "pm2 start .",
+    "pm2:start": "pm2 start index.js",
     "pm2:restartenv": "pm2 start . --update-env",
     "pm2:link:": "pm2 link 203pqowldnfgexy 22umryi1se1qws9",
     "pm2:monit": "pm2 monit",
